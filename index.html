@@ -1,14 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Data Science Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fff;
+      color: #1f2f56;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #ffffff;
+    }
+
+    nav {
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: #1f2f56;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+
+    nav a.active::after {
+      content: '';
+      display: block;
+      margin: auto;
+      width: 50%;
+      padding-top: 4px;
+      border-bottom: 2px solid #ff6363;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #4a6cf7;
+      margin-bottom: 0.2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #333;
+    }
+
+    .btn {
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.4rem;
+      background-color: #4a6cf7;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .sections {
+      display: flex;
+      justify-content: space-around;
+      padding: 3rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .section {
+      max-width: 300px;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .section img {
+      height: 60px;
+      margin-bottom: 1rem;
+    }
+
+    .section h3 {
+      font-size: 1.3rem;
+      color: #1f2f56;
+      margin-bottom: 0.5rem;
+    }
+
+    .section p {
+      color: #333;
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Welcome!</h1>
-  <p>This is my data science portfolio.</p>
-  <h2>Projects</h2>
-  <ul>
-    <!-- add more as needed -->
-  </ul>
+  <nav>
+    <a href="#" class="active">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Your Name</h1>
+    <h2>Data Scientist & Analyst</h2>
+    <p>Collect, process, analyze and present data – turning insights into action.</p>
+    <button class="btn">GET IN TOUCH</button>
+  </header>
+
+  <section class="sections">
+    <div class="section">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Collect Icon">
+      <h3>Collect</h3>
+      <p>Gather structured and unstructured data from APIs, databases, and web scraping. Ensure accuracy and completeness.</p>
+    </div>
+    <div class="section">
+      <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Process Icon">
+      <h3>Process</h3>
+      <p>Clean, transform, and prepare data for analysis. Handle missing values and standardize formats.</p>
+    </div>
+    <div class="section">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Visualize Icon">
+      <h3>Visualize</h3>
+      <p>Use tools like Matplotlib, Seaborn, Tableau to create impactful visualizations and reports for decision-making.</p>
+    </div>
+  </section>
 </body>
+
 </html>
