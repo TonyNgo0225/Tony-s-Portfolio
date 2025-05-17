@@ -1,1 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: url('stars.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+}
+
+.nav-left {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 0.95rem;
+}
+
+.contact-button {
+  padding: 8px 16px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.contact-button:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* Hero Text */
+.hero-text {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+/* About Section */
+.about {
+  padding: 80px 50px;
+  background-color: white;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.profile-img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.bio-text h3 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.bio-text p {
+  margin-bottom: 15px;
+  color: #333;
+}
 
